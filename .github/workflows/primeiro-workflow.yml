@@ -1,0 +1,20 @@
+name: Workflow inicial
+
+on:
+  push:
+
+jobs:
+  primeiro-job: 
+    runs-on: ubuntu-latest
+    steps:
+      - name: Exibir mensagem
+        run: echo "Ola melhor turma de ADS!!!"
+      
+      - name: Exibir data do sistema
+        run: date
+      
+      - name: Exibir diretorio
+        run: pwd
+      
+      - name: Listar arquivos
+        run: ls -la
